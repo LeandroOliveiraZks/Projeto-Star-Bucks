@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-   
+
 }
 
 body {
@@ -22,6 +22,7 @@ body {
 .texto {
     width: 600px;
 }
+
 .imagem {
     width: 600px;
     display: flex;
@@ -38,7 +39,7 @@ body {
 h1 {
     color: #333;
     font-size: 60px;
-    font-weight: 500 ;
+    font-weight: 500;
 }
 
 span {
@@ -61,12 +62,12 @@ button {
     margin-top: 20px;
 }
 
-.logo{
+.logo {
     width: 80px;
 }
 
 .starbucks {
-    width:340px;
+    width: 340px;
 }
 
 .botao-menu {
@@ -80,7 +81,7 @@ button {
     transform: translateY(-55px);
 }
 
-.circulo-color { 
+.circulo-color {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -91,3 +92,104 @@ button {
     z-index: -1;
 }
 
+@media (max-width: 991px) {
+    .quite {
+        display: block;
+        width: 400px;
+        align-items: center;
+
+    }
+
+    .logo {
+        width: 110px;
+        padding: 20px;
+        max-width: 100px;
+    }
+
+    body {
+        width: auto;
+        padding-top: 0px;
+        padding-right: 50px;
+        padding-left: 13px;
+
+    }
+
+    .imagem {
+        width: 600px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 250px;
+        margin-right: 50px;
+    }
+
+    .menu {
+        margin-top: 100%;
+    }
+
+    .menu img {}
+
+    p {
+        font-size: 20px;
+    }
+
+    .starbucks {
+        margin-top: -191px;
+        margin-right: 145px;
+        width: 200px;
+    }
+
+
+    .texto {
+        position: relative;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 3px;
+    }
+
+    .texto h1 span {
+        font-size: 40px;
+    }
+
+    .circulo-color {
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        background: #017143;
+        clip-path: circle(300px at center bottom);
+    }
+
+    .imagem img {
+        width: 150px;
+
+    }
+
+    .imagem {
+        padding-right: 180px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .circulo-color {
+        margin-top: 250px;
+    }
+
+    body {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .imagem img {
+        margin-top: -1px;
+    }
+
+    .menu  {
+       
+        margin-bottom: 500px;
+    }
+}
